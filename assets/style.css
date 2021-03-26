@@ -7,7 +7,7 @@
 body {
     background: #69bce9;
     width: 900px;
-    height: 100vh;
+    height: auto;
 
     margin: 0 auto;
     position: relative;
@@ -61,6 +61,8 @@ header ul li {
 
 header ul li a {
     cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 
 header ul li a:hover {
@@ -126,32 +128,33 @@ main {
     margin-top: 80px;
 }
 
+/* ################################################################ */
 /* Ecommerce */
 .main-title {
     margin-top: 100px;
     text-align: center;
+    color: #fff;
 }
 .ecommerce-produtos {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
 
     display: flex;
-
-    background: #e5e5e5;
 }
 
-main ul {
-    width: 100%;
+.ecommerce-produtos ul {
+    max-width: 900px;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
-main ul li {
+.ecommerce-produtos ul li {
     width: 263px;
     height: 386px;
 
     list-style: none;
-    margin-right: 55px;
+    margin-right: 37px;
 }
 .container {
     width: 263px;
@@ -167,9 +170,19 @@ main ul li {
 
 .sneakers {
     height: 321px;
-    bottom: 190px;
+    bottom: 105px;
 
     position: relative;
+}
+
+#blue_green {
+    bottom: 75px;
+}
+#purple_s {
+    bottom: 65px;
+}
+#blue_red {
+    bottom: 65px;
 }
 
 .texts {
@@ -177,6 +190,12 @@ main ul li {
 
     left: 20px;
     bottom: 200px;
+}
+
+.texts h3 {
+    position: relative;
+
+    right: 31px;
 }
 
 .texts h1 {
@@ -236,10 +255,22 @@ main ul li {
 #blue {
     background: #3864FF;
 }
+#black {
+    background: #010929;
+}
+#purple {
+    background: #6a21fc;
+}
+#orange {
+    background: #ff6d38;
+}
 
 #green:checked ~ label[for="green"],
 #red:checked ~ label[for="red"],
-#blue:checked ~ label[for="blue"] {
+#blue:checked ~ label[for="blue"],
+#black:checked ~ label[for="black"],
+#purple:checked ~ label[for="purple"],
+#orange:checked ~ label[for="orange"] {
     color: #ffffff;
     width: 21px;
     height: 21px;
@@ -304,6 +335,7 @@ label {
     border: none;
     background: #B5DB48;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 .btn-cart:hover {
     transform: scale(1.1);
@@ -312,10 +344,146 @@ label {
     background: #69bce9;
 }
 
-/* .flex-start {
-	align-content: flex-start;
+/* Tenis Verde */
+#sg37:checked ~ label[for="sg37"],
+#sg38:checked ~ label[for="sg38"],
+#sg39:checked ~ label[for="sg39"],
+#sg40:checked ~ label[for="sg40"] {
+    background: #B5DB48;
+    color: #ffffff;
+    border: none;
+}
+/* Tenis Azul */
+#sb37:checked ~ label[for="sb37"],
+#sb38:checked ~ label[for="sb38"],
+#sb39:checked ~ label[for="sb39"],
+#sb40:checked ~ label[for="sb40"] {
+    background: #B5DB48;
+    color: #ffffff;
+    border: none;
 }
 
-.flex-end {
-	align-content: flex-end;
-} */
+/* Tenis Vermelho */
+#sr37:checked ~ label[for="sr37"],
+#sr38:checked ~ label[for="sr38"],
+#sr39:checked ~ label[for="sr39"],
+#sr40:checked ~ label[for="sr40"] {
+    background: #B5DB48;
+    color: #ffffff;
+    border: none;
+}
+/* Tenis Preto */
+#tb37:checked ~ label[for="tb37"],
+#tb38:checked ~ label[for="tb38"],
+#tb39:checked ~ label[for="tb39"],
+#tb40:checked ~ label[for="tb40"] {
+    background: #B5DB48;
+    color: #ffffff;
+    border: none;
+}
+/* Tenis Roxo */
+#tp37:checked ~ label[for="tp37"],
+#tp38:checked ~ label[for="tp38"],
+#tp39:checked ~ label[for="tp39"],
+#tp40:checked ~ label[for="tp40"] {
+    background: #B5DB48;
+    color: #ffffff;
+    border: none;
+}
+
+/* Tenis Laranja */
+#to37:checked ~ label[for="to37"],
+#to38:checked ~ label[for="to38"],
+#to39:checked ~ label[for="to39"],
+#to40:checked ~ label[for="to40"] {
+    background: #B5DB48;
+    color: #ffffff;
+    border: none;
+}
+
+/* Cart */
+.container-list {
+    width: 100%;
+    height: 90vh;
+
+    margin-bottom: 100px;
+
+    background-color: #fff;
+    border-radius: 20px;
+
+    padding: 50px;
+}
+
+.list-title {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.container-list table {
+    width: 60%;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.container-list table td{
+    padding: 20px;
+}
+
+.container-list h3 {
+    margin-bottom: 30px;
+}
+
+.final-content {
+    
+}
+
+.cupom {
+    display: inline-flex;
+    line-height: 40px;
+}
+
+#buy-cupom {
+    height: 15px;
+
+    margin: 15px;
+}
+
+.btn-cupom {
+    width: 100px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: none;
+    background-color: #69bce9;
+
+    font-size: 12px;
+
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-cupom:active {
+    background-color: deeppink;
+}
+
+.payment-btn {
+    width: 180px;
+    height: 70px;
+
+    border-radius: 40px;
+    border: none;
+    background-color: #69bce9;
+
+    font-size: 18px;
+
+    color: #fff;
+    text-transform: uppercase;
+}
+.payment-btn:active {
+    background-color: deeppink;
+}
+
+.cupons {
+    margin-top: 20px;
+}

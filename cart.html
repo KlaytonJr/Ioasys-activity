@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a  href="./index.html">
+                <img src="./assets/img/Captura_de_Tela_2021-03-24_Ã s_14.23.14-removebg-preview.png">
+            </a>        
+        </div>
+        <nav>
+            <ul>
+                <li><a  href="./index.html">Inicio</a></li>
+                <li><a href="./ecommerce.html">Produtos</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./cart.html" class="cart"><i data-feather="shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="list-title">Lista de Compras</h1>
+        <div class="container-list">
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th> 
+                    <th>Preço</th>
+                </tr>
+            </table>
+            <div class="final-content">
+                <h3 id="qtd-total">Quantidade Total: </h3>
+
+                <h3 id="total-price">Preço Total: </h3>
+
+                <div class="cupom">
+                    <h3>Adicionar cupom:</h3>
+                    <input type="text" id="buy-cupom">
+                    <button class="btn-cupom">Add Cupom</button>
+                </div>
+
+                <h3 id="final-price">Preço final: </h3>
+                <button class="payment-btn">Finalizar</button>
+            </div>
+            <div class="cupons">
+                <hr />
+                <h1>Cupons de Desconto</h1>
+
+                <p>camp10 -> 10% de desconto</p>
+                <p>camp30 -> 30% de desconto</p>
+                <p>camp50 -> 50% de desconto</p>
+            </div>
+        </div>
+    </main>
+        
+    <script>
+	    feather.replace()
+	</script>
+    <script src="./assets/index.js"></script>
+</body>
+</html>
