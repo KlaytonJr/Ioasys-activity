@@ -74,15 +74,11 @@ function Produto(nome, preco){
 let cart = new CarrinhoDeCompras("Klayton", new Date(), false);
 
 function clicaMe(e) {
-    // console.log('inline', this); // vai dar window
-    // console.log('inline e.target', e.target); // vai dar button
 
-    // var pai = e.target.closest("li").getAttribute("class");
     let pai = e.target.closest("li");
 
     let filhoNome = pai.querySelector(".container > .texts > h1").innerHTML;
     let filhoPreco = pai.querySelector(".container > .price > h2").innerHTML;
-    // var filhoTamanho = pai.querySelector(".selected-size").innerHTML;
 
     let quantidade = 1
     let check = false;
@@ -97,13 +93,9 @@ function clicaMe(e) {
         }
     }
 
-    
-
     if (!check) {
         cart.adicionarProduto(new Produto(filhoNome, parseFloat(filhoPreco)), quantidade)
     }
-    
-    // console.log(cart.itens);
 
     salvarListaCompra(cart.itens)
 
@@ -129,7 +121,6 @@ function preencherDados(lista) {
     const tableData = lista;
     let quantidadeTotal = 0;
     let valorTotalCompra = 0;
-    //console.log(tableData[0]);
 
     // Preencher Tabela
     const table = document.querySelector("table")
@@ -181,7 +172,7 @@ function preencherDados(lista) {
 
 const payment = document.querySelector(".payment-btn");
 
-payment.addEventListener("click", (e) => {
+payment.addEventListener("click", () => {
     alert("Obrigado por testar meu projeto de ecommerce, não se esqueça de se conectar comigo no Github e LinkedIn!")
 })
 

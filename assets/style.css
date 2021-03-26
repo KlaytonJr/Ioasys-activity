@@ -404,7 +404,7 @@ label {
 /* Cart */
 .container-list {
     width: 100%;
-    height: 90vh;
+    height: auto;
 
     margin-bottom: 100px;
 
@@ -432,10 +432,6 @@ label {
 
 .container-list h3 {
     margin-bottom: 30px;
-}
-
-.final-content {
-    
 }
 
 .cupom {
