@@ -12,14 +12,16 @@
 <body>
     <header>
         <div class="logo">
+          <a  href="./index.html">
             <img src="./assets/img/Captura_de_Tela_2021-03-24_Ã s_14.23.14-removebg-preview.png">
-        </div>
+          </a>        
+      </div>
         <nav>
             <ul>
-                <li><a>Inicio</a></li>
-                <li><a>Produtos</a></li>
-                <li><a>Contato</a></li>
-                <li><a href="./ecommerce.html" class="cart"><i data-feather="shopping-cart"></i></a></li>
+                <li><a  href="./index.html">Inicio</a></li>
+                <li><a href="./ecommerce.html">Produtos</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./cart.html" class="cart"><i data-feather="shopping-cart"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -27,49 +29,45 @@
     <div class="main-title">
         <h1>Produtos</h1>
     </div>
-    <main class="ecommerce-produtos">
+    <main class="ecommerce-produtos main">
         <ul>
-            <li>
+            <li class="tenis1">
                 <div class="container">
                     <div class="sneakers">
                       <img src="./assets/img/TENIS.png">
                     </div>
                     <div class="texts">
                       <h3>Nike</h3>
-                      <h1>Epic React Flyknit 2</h1>
+                      <h1>Epic React Flyknit 1</h1>
                     </div>
                     <div class="price">
                       <h3>R$</h3>
-                      <h2>359,00</h2>
+                      <h2>359.00</h2>
                     </div>
                     <div class="colors">
-                      <p>Cores:</p>
+                      <p>Cor:</p>
                       <div class="select-color">
                           <input type="radio" name="c-color" id="green" checked/>
-                          <input type="radio" name="c-color" id="red" />
-                          <input type="radio" name="c-color" id="blue" />
                         
                           <label for="green" id="green"></label>
-                          <label for="red" id="red"></label>
-                          <label for="blue" id="blue"></label>
                         </div>
                     </div>
                     <div class="sizes">
                         <p>Tamanhos:</p>
                         <div class="select-size">
-                            <input type="radio" name="s-size" id="t37" checked/>
-                            <input type="radio" name="s-size" id="t38" />
-                            <input type="radio" name="s-size" id="t39" />
-                            <input type="radio" name="s-size" id="t40" />
+                            <input type="radio" name="sg-size" id="sg37" checked/>
+                            <input type="radio" name="sg-size" id="sg38" />
+                            <input type="radio" name="sg-size" id="sg39" />
+                            <input type="radio" name="sg-size" id="sg40" />
                           
-                            <label for="t37">37</label>
-                            <label for="t38">38</label>
-                            <label for="t39">39</label>
-                            <label for="t40">40</label>
+                            <label for="sg37">37</label>
+                            <label for="sg38">38</label>
+                            <label for="sg39">39</label>
+                            <label for="sg40">40</label>
                           </div>
                     </div>
                     <div class="buy">
-                      <button class="btn-cart cart">
+                      <button class="btn-cart cart" onclick="clicaMe(event);">
                           <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
                             <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
@@ -85,10 +83,10 @@
                 </div>
             </li>
             <!--  -->
-            <li>
+            <li class="tenis2">
                 <div class="container">
                     <div class="sneakers">
-                      <img src="./assets/img/TENIS.png">
+                      <img src="./assets/img/TENIS_BLUE.png">
                     </div>
                     <div class="texts">
                       <h3>Nike</h3>
@@ -96,36 +94,32 @@
                     </div>
                     <div class="price">
                       <h3>R$</h3>
-                      <h2>359,00</h2>
+                      <h2>379.00</h2>
                     </div>
                     <div class="colors">
-                      <p>Cores:</p>
+                      <p>Cor:</p>
                       <div class="select-color">
-                          <input type="radio" name="c-color" id="green" checked/>
-                          <input type="radio" name="c-color" id="red" />
-                          <input type="radio" name="c-color" id="blue" />
+                          <input type="radio" name="c-color" id="blue" checked/>
                         
-                          <label for="green" id="green"></label>
-                          <label for="red" id="red"></label>
                           <label for="blue" id="blue"></label>
                         </div>
                     </div>
                     <div class="sizes">
                         <p>Tamanhos:</p>
                         <div class="select-size">
-                            <input type="radio" name="s-size" id="t37" checked/>
-                            <input type="radio" name="s-size" id="t38" />
-                            <input type="radio" name="s-size" id="t39" />
-                            <input type="radio" name="s-size" id="t40" />
+                            <input type="radio" name="sb-size" id="sb37" checked/>
+                            <input type="radio" name="sb-size" id="sb38" />
+                            <input type="radio" name="sb-size" id="sb39" />
+                            <input type="radio" name="sb-size" id="sb40" />
                           
-                            <label for="t37">37</label>
-                            <label for="t38">38</label>
-                            <label for="t39">39</label>
-                            <label for="t40">40</label>
+                            <label for="sb37">37</label>
+                            <label for="sb38">38</label>
+                            <label for="sb39">39</label>
+                            <label for="sb40">40</label>
                           </div>
                     </div>
                     <div class="buy">
-                      <button class="btn-cart cart">
+                      <button class="btn-cart cart" onclick="clicaMe(event);">
                           <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
                             <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
@@ -141,47 +135,147 @@
                 </div>
             </li>
             <!--  -->
-            <li>
+            <li class="tenis3">
                 <div class="container">
                     <div class="sneakers">
-                      <img src="./assets/img/TENIS.png">
+                      <img src="./assets/img/TENIS_RED.png">
                     </div>
                     <div class="texts">
                       <h3>Nike</h3>
-                      <h1>Epic React Flyknit 2</h1>
+                      <h1>Epic React Flyknit 3</h1>
                     </div>
                     <div class="price">
                       <h3>R$</h3>
-                      <h2>359,00</h2>
+                      <h2>399.50</h2>
                     </div>
                     <div class="colors">
-                      <p>Cores:</p>
-                      <div class="select-color">
-                          <input type="radio" name="c-color" id="green" checked/>
-                          <input type="radio" name="c-color" id="red" />
-                          <input type="radio" name="c-color" id="blue" />
-                        
-                          <label for="green" id="green"></label>
-                          <label for="red" id="red"></label>
-                          <label for="blue" id="blue"></label>
+                      <p>Cor:</p>
+                        <div class="select-color">
+                            <input type="radio" name="c-color" id="red" checked/>
+                            
+                            <label for="red" id="red"></label>
                         </div>
                     </div>
                     <div class="sizes">
                         <p>Tamanhos:</p>
                         <div class="select-size">
-                            <input type="radio" name="s-size" id="t37" checked/>
-                            <input type="radio" name="s-size" id="t38" />
-                            <input type="radio" name="s-size" id="t39" />
-                            <input type="radio" name="s-size" id="t40" />
+                            <input type="radio" name="sr-size" id="sr37" checked/>
+                            <input type="radio" name="sr-size" id="sr38" />
+                            <input type="radio" name="sr-size" id="sr39" />
+                            <input type="radio" name="sr-size" id="sr40" />
+                        
+                            <label for="sr37">37</label>
+                            <label for="sr38">38</label>
+                            <label for="sr39">39</label>
+                            <label for="sr40">40</label>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button class="btn-cart cart" onclick="clicaMe(event);">
+                            <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
+                                <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
+                                <path d="M16.59 8.29494L12 12.8749L7.41 8.29494L6 9.70494L12 15.7049L18 9.70494L16.59 8.29494Z" fill="white" fill-opacity="0.2"/>
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="local_grocery_store_24px">
+                                <path id="icon/maps/local_grocery_store_24px" fill-rule="evenodd" clip-rule="evenodd" d="M16.5463 12.9999C17.2963 12.9999 17.9563 12.5899 18.2963 11.9699L21.8763 5.47994C22.2463 4.81994 21.7663 3.99994 21.0063 3.99994H6.20628L5.26628 1.99994H1.99628V3.99994H3.99628L7.59628 11.5899L6.24628 14.0299C5.51628 15.3699 6.47628 16.9999 7.99628 16.9999H19.9963V14.9999H7.99628L9.09628 12.9999H16.5463ZM6.00628 19.9999C6.00628 18.8999 6.89628 17.9999 7.99628 17.9999C9.09628 17.9999 9.99628 18.8999 9.99628 19.9999C9.99628 21.0999 9.09628 21.9999 7.99628 21.9999C6.89628 21.9999 6.00628 21.0999 6.00628 19.9999ZM16.0063 19.9999C16.0063 18.8999 16.8963 17.9999 17.9963 17.9999C19.0963 17.9999 19.9963 18.8999 19.9963 19.9999C19.9963 21.0999 19.0963 21.9999 17.9963 21.9999C16.8963 21.9999 16.0063 21.0999 16.0063 19.9999ZM19.3063 5.99994H7.15628L9.52628 10.9999H16.5463L19.3063 5.99994Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="tenis4">
+                <div class="container">
+                    <div class="sneakers" id="blue_green">
+                      <img src="./assets/img/TENIS_BeG.png">
+                    </div>
+                    <div class="texts">
+                      <h3>Nike</h3>
+                      <h1>Epic Runner Sneakers</h1>
+                    </div>
+                    <div class="price">
+                      <h3>R$</h3>
+                      <h2>539.00</h2>
+                    </div>
+                    <div class="colors">
+                      <p>Cor:</p>
+                      <div class="select-color">
+                          <input type="radio" name="c-color" id="black" checked/>
+                        
+                          <label for="black" id="black"></label>
+                        </div>
+                    </div>
+                    <div class="sizes">
+                        <p>Tamanhos:</p>
+                        <div class="select-size">
+                            <input type="radio" name="sblack-size" id="tb37" checked/>
+                            <input type="radio" name="sblack-size" id="tb38" />
+                            <input type="radio" name="sblack-size" id="tb39" />
+                            <input type="radio" name="sblack-size" id="tb40" />
                           
-                            <label for="t37">37</label>
-                            <label for="t38">38</label>
-                            <label for="t39">39</label>
-                            <label for="t40">40</label>
+                            <label for="tb37">37</label>
+                            <label for="tb38">38</label>
+                            <label for="tb39">39</label>
+                            <label for="tb40">40</label>
                           </div>
                     </div>
                     <div class="buy">
-                      <button class="btn-cart cart">
+                        <button class="btn-cart cart" onclick="clicaMe(event);">
+                            <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
+                                <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
+                                <path d="M16.59 8.29494L12 12.8749L7.41 8.29494L6 9.70494L12 15.7049L18 9.70494L16.59 8.29494Z" fill="white" fill-opacity="0.2"/>
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="local_grocery_store_24px">
+                                <path id="icon/maps/local_grocery_store_24px" fill-rule="evenodd" clip-rule="evenodd" d="M16.5463 12.9999C17.2963 12.9999 17.9563 12.5899 18.2963 11.9699L21.8763 5.47994C22.2463 4.81994 21.7663 3.99994 21.0063 3.99994H6.20628L5.26628 1.99994H1.99628V3.99994H3.99628L7.59628 11.5899L6.24628 14.0299C5.51628 15.3699 6.47628 16.9999 7.99628 16.9999H19.9963V14.9999H7.99628L9.09628 12.9999H16.5463ZM6.00628 19.9999C6.00628 18.8999 6.89628 17.9999 7.99628 17.9999C9.09628 17.9999 9.99628 18.8999 9.99628 19.9999C9.99628 21.0999 9.09628 21.9999 7.99628 21.9999C6.89628 21.9999 6.00628 21.0999 6.00628 19.9999ZM16.0063 19.9999C16.0063 18.8999 16.8963 17.9999 17.9963 17.9999C19.0963 17.9999 19.9963 18.8999 19.9963 19.9999C19.9963 21.0999 19.0963 21.9999 17.9963 21.9999C16.8963 21.9999 16.0063 21.0999 16.0063 19.9999ZM19.3063 5.99994H7.15628L9.52628 10.9999H16.5463L19.3063 5.99994Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <!--  -->
+            <li class="tenis5">
+                <div class="container">
+                    <div class="sneakers" id="purple_s">
+                      <img src="./assets/img/TENIS_PURPLE.png">
+                    </div>
+                    <div class="texts">
+                      <h3>Nike</h3>
+                      <h1>Epic Runner Sneakers 2</h1>
+                    </div>
+                    <div class="price">
+                      <h3>R$</h3>
+                      <h2>629.00</h2>
+                    </div>
+                    <div class="colors">
+                      <p>Cor:</p>
+                      <div class="select-color">
+                          <input type="radio" name="c-color" id="purple" checked/>
+                        
+                          <label for="purple" id="purple"></label>
+                        </div>
+                    </div>
+                    <div class="sizes">
+                        <p>Tamanhos:</p>
+                        <div class="select-size">
+                            <input type="radio" name="sp-size" id="tp37" checked/>
+                            <input type="radio" name="sp-size" id="tp38" />
+                            <input type="radio" name="sp-size" id="tp39" />
+                            <input type="radio" name="sp-size" id="tp40" />
+                          
+                            <label for="tp37" class="selected-size">37</label>
+                            <label for="tp38" class="selected-size">38</label>
+                            <label for="tp39" class="selected-size">39</label>
+                            <label for="tp40" class="selected-size">40</label>
+                          </div>
+                    </div>
+                    <div class="buy">
+                      <button class="btn-cart cart" onclick="clicaMe(event);">
                           <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
                             <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
@@ -197,159 +291,43 @@
                 </div>
             </li>
             <!--  -->
-            <li>
+            <li class="tenis6">
                 <div class="container">
-                    <div class="sneakers">
-                      <img src="./assets/img/TENIS.png">
+                    <div class="sneakers" id="blue_red">
+                      <img src="./assets/img/TENIS_BeR.png">
                     </div>
                     <div class="texts">
                       <h3>Nike</h3>
-                      <h1>Epic React Flyknit 2</h1>
+                      <h1>Epic Basket Sneakers</h1>
                     </div>
                     <div class="price">
                       <h3>R$</h3>
-                      <h2>359,00</h2>
+                      <h2>659.00</h2>
                     </div>
                     <div class="colors">
-                      <p>Cores:</p>
+                      <p>Cor:</p>
                       <div class="select-color">
-                          <input type="radio" name="c-color" id="green" checked/>
-                          <input type="radio" name="c-color" id="red" />
-                          <input type="radio" name="c-color" id="blue" />
+                          <input type="radio" name="c-color" id="orange" checked/>
                         
-                          <label for="green" id="green"></label>
-                          <label for="red" id="red"></label>
-                          <label for="blue" id="blue"></label>
+                          <label for="orange" id="orange"></label>
                         </div>
                     </div>
                     <div class="sizes">
                         <p>Tamanhos:</p>
                         <div class="select-size">
-                            <input type="radio" name="s-size" id="t37" checked/>
-                            <input type="radio" name="s-size" id="t38" />
-                            <input type="radio" name="s-size" id="t39" />
-                            <input type="radio" name="s-size" id="t40" />
+                            <input type="radio" name="so-size" id="to37" checked/>
+                            <input type="radio" name="so-size" id="to38" />
+                            <input type="radio" name="so-size" id="to39" />
+                            <input type="radio" name="so-size" id="to40" />
                           
-                            <label for="t37">37</label>
-                            <label for="t38">38</label>
-                            <label for="t39">39</label>
-                            <label for="t40">40</label>
+                            <label for="to37" class="selected-size">37</label>
+                            <label for="to38" class="selected-size">38</label>
+                            <label for="to39" class="selected-size">39</label>
+                            <label for="to40" class="selected-size">40</label>
                           </div>
                     </div>
                     <div class="buy">
-                      <button class="btn-cart cart">
-                          <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
-                            <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
-                            <path d="M16.59 8.29494L12 12.8749L7.41 8.29494L6 9.70494L12 15.7049L18 9.70494L16.59 8.29494Z" fill="white" fill-opacity="0.2"/>
-                          </svg>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="local_grocery_store_24px">
-                            <path id="icon/maps/local_grocery_store_24px" fill-rule="evenodd" clip-rule="evenodd" d="M16.5463 12.9999C17.2963 12.9999 17.9563 12.5899 18.2963 11.9699L21.8763 5.47994C22.2463 4.81994 21.7663 3.99994 21.0063 3.99994H6.20628L5.26628 1.99994H1.99628V3.99994H3.99628L7.59628 11.5899L6.24628 14.0299C5.51628 15.3699 6.47628 16.9999 7.99628 16.9999H19.9963V14.9999H7.99628L9.09628 12.9999H16.5463ZM6.00628 19.9999C6.00628 18.8999 6.89628 17.9999 7.99628 17.9999C9.09628 17.9999 9.99628 18.8999 9.99628 19.9999C9.99628 21.0999 9.09628 21.9999 7.99628 21.9999C6.89628 21.9999 6.00628 21.0999 6.00628 19.9999ZM16.0063 19.9999C16.0063 18.8999 16.8963 17.9999 17.9963 17.9999C19.0963 17.9999 19.9963 18.8999 19.9963 19.9999C19.9963 21.0999 19.0963 21.9999 17.9963 21.9999C16.8963 21.9999 16.0063 21.0999 16.0063 19.9999ZM19.3063 5.99994H7.15628L9.52628 10.9999H16.5463L19.3063 5.99994Z" fill="white"/>
-                            </g>
-                          </svg>
-                      </button>
-                    </div>
-                </div>
-            </li>
-            <!--  -->
-            <li>
-                <div class="container">
-                    <div class="sneakers">
-                      <img src="./assets/img/TENIS.png">
-                    </div>
-                    <div class="texts">
-                      <h3>Nike</h3>
-                      <h1>Epic React Flyknit 2</h1>
-                    </div>
-                    <div class="price">
-                      <h3>R$</h3>
-                      <h2>359,00</h2>
-                    </div>
-                    <div class="colors">
-                      <p>Cores:</p>
-                      <div class="select-color">
-                          <input type="radio" name="c-color" id="green" checked/>
-                          <input type="radio" name="c-color" id="red" />
-                          <input type="radio" name="c-color" id="blue" />
-                        
-                          <label for="green" id="green"></label>
-                          <label for="red" id="red"></label>
-                          <label for="blue" id="blue"></label>
-                        </div>
-                    </div>
-                    <div class="sizes">
-                        <p>Tamanhos:</p>
-                        <div class="select-size">
-                            <input type="radio" name="s-size" id="t37" checked/>
-                            <input type="radio" name="s-size" id="t38" />
-                            <input type="radio" name="s-size" id="t39" />
-                            <input type="radio" name="s-size" id="t40" />
-                          
-                            <label for="t37">37</label>
-                            <label for="t38">38</label>
-                            <label for="t39">39</label>
-                            <label for="t40">40</label>
-                          </div>
-                    </div>
-                    <div class="buy">
-                      <button class="btn-cart cart">
-                          <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
-                            <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
-                            <path d="M16.59 8.29494L12 12.8749L7.41 8.29494L6 9.70494L12 15.7049L18 9.70494L16.59 8.29494Z" fill="white" fill-opacity="0.2"/>
-                          </svg>
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="local_grocery_store_24px">
-                            <path id="icon/maps/local_grocery_store_24px" fill-rule="evenodd" clip-rule="evenodd" d="M16.5463 12.9999C17.2963 12.9999 17.9563 12.5899 18.2963 11.9699L21.8763 5.47994C22.2463 4.81994 21.7663 3.99994 21.0063 3.99994H6.20628L5.26628 1.99994H1.99628V3.99994H3.99628L7.59628 11.5899L6.24628 14.0299C5.51628 15.3699 6.47628 16.9999 7.99628 16.9999H19.9963V14.9999H7.99628L9.09628 12.9999H16.5463ZM6.00628 19.9999C6.00628 18.8999 6.89628 17.9999 7.99628 17.9999C9.09628 17.9999 9.99628 18.8999 9.99628 19.9999C9.99628 21.0999 9.09628 21.9999 7.99628 21.9999C6.89628 21.9999 6.00628 21.0999 6.00628 19.9999ZM16.0063 19.9999C16.0063 18.8999 16.8963 17.9999 17.9963 17.9999C19.0963 17.9999 19.9963 18.8999 19.9963 19.9999C19.9963 21.0999 19.0963 21.9999 17.9963 21.9999C16.8963 21.9999 16.0063 21.0999 16.0063 19.9999ZM19.3063 5.99994H7.15628L9.52628 10.9999H16.5463L19.3063 5.99994Z" fill="white"/>
-                            </g>
-                          </svg>
-                      </button>
-                    </div>
-                </div>
-            </li>
-            <!--  -->
-            <li>
-                <div class="container">
-                    <div class="sneakers">
-                      <img src="./assets/img/TENIS.png">
-                    </div>
-                    <div class="texts">
-                      <h3>Nike</h3>
-                      <h1>Epic React Flyknit 2</h1>
-                    </div>
-                    <div class="price">
-                      <h3>R$</h3>
-                      <h2>359,00</h2>
-                    </div>
-                    <div class="colors">
-                      <p>Cores:</p>
-                      <div class="select-color">
-                          <input type="radio" name="c-color" id="green" checked/>
-                          <input type="radio" name="c-color" id="red" />
-                          <input type="radio" name="c-color" id="blue" />
-                        
-                          <label for="green" id="green"></label>
-                          <label for="red" id="red"></label>
-                          <label for="blue" id="blue"></label>
-                        </div>
-                    </div>
-                    <div class="sizes">
-                        <p>Tamanhos:</p>
-                        <div class="select-size">
-                            <input type="radio" name="s-size" id="t37" checked/>
-                            <input type="radio" name="s-size" id="t38" />
-                            <input type="radio" name="s-size" id="t39" />
-                            <input type="radio" name="s-size" id="t40" />
-                          
-                            <label for="t37">37</label>
-                            <label for="t38">38</label>
-                            <label for="t39">39</label>
-                            <label for="t40">40</label>
-                          </div>
-                    </div>
-                    <div class="buy">
-                      <button class="btn-cart cart">
+                      <button class="btn-cart cart" onclick="clicaMe(event);">
                           <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.59 20.2949L12 24.8749L7.41 20.2949L6 21.7049L12 27.7049L18 21.7049L16.59 20.2949Z" fill="white" fill-opacity="0.6"/>
                             <path d="M16.59 14.2949L12 18.8749L7.41 14.2949L6 15.7049L12 21.7049L18 15.7049L16.59 14.2949Z" fill="white" fill-opacity="0.4"/>
@@ -367,9 +345,9 @@
         </ul>
     </main>
     
-    <script>
+  <script>
 	    feather.replace()
 	</script>
-    <script src="./assets/index.js"></script>
+  <script src="./assets/index.js"></script>
 </body>
 </html>
